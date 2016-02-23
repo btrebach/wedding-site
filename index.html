@@ -1,0 +1,413 @@
+<!--
+Author: Ben Trebach
+Author URL: http://btrebach.com
+-->
+
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Alli &amp; Ben's Wedding</title>
+		<link href="css/bootstrap.css" rel='stylesheet' type='text/css'/>
+		<script src="js/jquery.min.js"></script>
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+		 <!-- Custom Theme files -->
+		 <!---- animated-css ---->
+		<link href="css/animate.css" rel="stylesheet" type="text/css" media="all">
+		<script src="js/wow.min.js"></script>
+		<script>
+		 new WOW().init();
+		</script>
+		<!---- animated-css ---->
+		<script type="text/javascript" src="js/move-top.js"></script>
+		<script type="text/javascript" src="js/easing.js"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+		<link href="css/style.css" rel='stylesheet' type='text/css' />
+   		 <!-- Custom Theme files -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name='category' content='wedding-site'>
+		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+		</script>
+		<!----webfonts--->
+		<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+		<!---/webfonts--->
+
+		<script>
+			$(function() {
+				var pull 		= $('#pull');
+					menu 		= $('nav ul');
+					menuHeight	= menu.height();
+				$(pull).on('click', function(e) {
+					e.preventDefault();
+					menu.slideToggle();
+				});
+				$(window).resize(function(){
+	        		var w = $(window).width();
+	        		if(w > 320 && menu.is(':hidden')) {
+	        			menu.removeAttr('style');
+	        		}
+	    		});
+			});
+		</script>
+		<!----//End-top-nav-script---->
+	</head>
+	<body>
+		<div class="bg">
+		<!----- start-header---->
+			<div id="home" class="header wow bounceInDown" data-wow-delay="0.3s">
+					<div class="top-header">
+						<div class="container">
+						<div class="logo">
+							<img src="images/AlliAndBenLogo.png" title="Alli and Ben" width="80px" height="auto" />
+						</div>
+						 <nav class="top-nav">
+							<ul class="top-nav">
+								<li><a href="#details" class="scroll">Details</a></li>
+								<li><a href="#accomodations" class="scroll">Accomodations</a></li>
+								<li><a href="#timeline" class="scroll">Story</a></li>
+								<li><a href="#party" class="scroll">Party</a></li>
+								<li><a href="#registries" class="scroll">Registries</a></li>
+								<li><a href="#contact" class="scroll">Contact</a></li>
+							</ul>
+							<a href="#" id="pull"><img src="images/menu-icon.png" title="menu" /></a>
+						</nav>
+						<div class="clearfix"> </div>
+					</div>
+				</div>
+			</div>
+			<!----- //End-header---->
+			<!---- banner ---->
+			<div class="banner wow fadeIn" data-wow-delay="0.4s">
+				<div class="container">
+					<div class="banner-info text-center">
+						<h1>We Can't Wait to Celebrate</h1><br />
+						<span> </span>
+						<p>August 27th 2016</p>
+					</div>
+				</div>
+			</div>
+		</div>
+			<!---- /banner ---->
+			<div class="clearfix"> </div>
+			<!---- wedding details ---->
+			<div id="details" class="expertise">
+				<div class="expertice-grids">
+					<div class="col-md-8 expertice-left-grid wow fadeInLeft" data-wow-delay="0.3s">
+						<div class="expertise-head">
+							<h3>Wedding Details</h3>
+							<p>Proin iaculis purus consequat sem cure  digni ssim. Donec porttitora entum suscipit  aenean rhoncus posuere odio in tincidunt consequat sem cure  digni ssim. </p>
+						</div>
+						<div class="expertise-left-inner-grids">
+							<div class="e-left-inner-grid">
+								<div class="e-left-inner-grid-left">
+									<span class="e-icon1"> </span>
+								</div>
+								<div class="e-left-inner-grid-right">
+									<h4>Ceremony</h4>
+									<p>Our ceremony will be held at Beaton's Boatyard which can be found at: 72 Beaton Rd. Brick, NJ 08723</p>
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+							<div class="e-left-inner-grid">
+								<div class="e-left-inner-grid-left">
+									<span class="e-icon2"> </span>
+								</div>
+								<div class="e-left-inner-grid-right">
+									<h4>Reception</h4>
+									<p>Our reception will be held at the Sunset Ballroom located in Jack Baker's Lobster Shanty: 83 Channel Dr. Point Pleasant Beach, NJ 08742</p>
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+							<div class="e-left-inner-grid" style="display:none;">
+								<div class="e-left-inner-grid-left">
+									<span class="e-icon3"> </span>
+								</div>
+								<div class="e-left-inner-grid-right">
+									<h4>All star support team</h4>
+									<p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus.</p>
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+							<div class="e-left-inner-grid" style="display:none;">
+								<div class="e-left-inner-grid-left">
+									<span class="e-icon4"> </span>
+								</div>
+								<div class="e-left-inner-grid-right">
+									<h4>top notch security</h4>
+									<p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus.</p>
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+					</div>
+					<div class="col-md-4 expertice-right-grid wow fadeInRight" data-wow-delay="0.3s">
+						
+					</div>
+					<div class="clearfix"> </div> 
+				</div>
+			</div>
+			<!---- /wedding details ---->
+			<!---- accomodations ---->
+			<div id="accomodations" class="portfolio">
+				<div class="portfolio-top">
+					<div class="col-md-8">
+						<div class="portfolio-top-left wow fadeInLeft" data-wow-delay="0.3s">
+							<h3>Accomodations</h3>
+							<p>Sorry, but this is a beach town in the summertime so blocking rooms isn't much of an option.</p>
+							<p>Every accomodation listed below requires at least a two night minimum so you might as well make a weekend out of it!</p>
+							<div class="portfolio-top-left-grids">
+								<div class="portfolio-top-left-grid">
+									<div class="portfolio-top-left-grid-left">
+										<span class="p-icon1"> </span>
+									</div>
+									<div class="portfolio-top-left-grid-right">
+										<h5>Point Pleasant, NJ</h5>
+										<p><a href="http://www.surfside-motel.com/">Surfside Motel</a> - (732) 899-1109</p>
+										<p><a href="http://www.windsweptmotel.net/">Windswept Motel</a> - (732) 899-1282</p>
+										<p><a href="http://www.thewhitesands.com/">The White Sands</a> - (732) 899-3370</p>
+									</div>
+									<div class="clearfix"> </div>
+								</div>
+								<div class="portfolio-top-left-grid">
+									<div class="portfolio-top-left-grid-left">
+										<span class="p-icon1"> </span>
+									</div>
+									<div class="portfolio-top-left-grid-right">
+										<h5>Bay Head, NJ</h5>
+										<p><a href="http://www.bentleyinn.com/">The Bentley Inn</a> - (732) 892-9589</p>
+										<p><a href="http://www.thegrenville.com/">The Grenville</a> - (732) 892-3100</p>
+									</div>
+									<div class="clearfix"> </div>
+								</div>
+								<div class="portfolio-top-left-grid">
+									<div class="portfolio-top-left-grid-left">
+										<span class="p-icon1"> </span>
+									</div>
+									<div class="portfolio-top-left-grid-right">
+										<h5>Spring Lake, NJ</h5>
+										<p><a href="http://www.thehewittwellington.com/">Hewitt Wellington</a> - (732) 974-1212</p>
+										<p><a href="http://www.chateauinn/">Chateau Inn &amp; Suites</a> - (732) 974-2000</p>
+										<p><a href="http://www.breakershotel.com/">The Breakers on the Ocean</a> - (732) 449-7700</p>
+									</div>
+									<div class="clearfix"> </div>
+								</div>
+								<div class="portfolio-top-left-grid">
+									<div class="portfolio-top-left-grid-left">
+										<span class="p-icon1"> </span>
+									</div>
+									<div class="portfolio-top-left-grid-right">
+										<h5>Sea Girt, NJ</h5>
+										<p><a href="http://www.seagirtlodge.com/">Sea Girt Lodge</a> - (732) 974-2323</p>
+									</div>
+									<div class="clearfix"> </div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 portfolio-top-right-inner wow fadeInRight" data-wow-delay="0.3s">
+						<div class="" style="margin-top:50px; padding-right:50px;">
+							<iframe src="https://www.google.com/maps/d/embed?mid=z5atqarCKRq4.k4bgq4S2NnoQ" width="360" height="750"></iframe>
+						</div>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+			<!---- /accomodations ---->
+			<!---- timeline ---->
+		    <div class="about" id="timeline">
+			<div class="wrap"> 
+				<div class="about-head">
+					<h1>Our Story</h1>
+					<span> </span>
+				</div>
+				<!---start-about-time-line---->
+				<div class="about-time-line">
+					<li>
+							<div class="cbp_tmicon img1"> </div>
+							<div class="cbp_tmlabel wow fadeInLeft" data-wow-delay="0.3s">
+								<h2>August 2010 <br> Our Humble Beginnings</h2>
+								<p>Both Alli and Ben began their undergraduate education at St. Mary's College of Maryland. Living in the school's oldest and most likely to be haunted dorm building.</p>
+							</div>
+					</li>
+					<li>
+							<div class="cbp_tmicon1 img2"> </div>
+							<div class="cbp_tmlabel cbp_tmlabel1 wow fadeInRight" data-wow-delay="0.3s">
+								<h2>January 2011</h2>
+								<p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</p>
+							</div>
+					</li><br />
+					<li>
+							<div class="cbp_tmicon2 img3"> </div>
+							<div class="cbp_tmlabel wow fadeInLeft" data-wow-delay="0.3s">
+								<h2>October 2015 <br> The Great Rescue</h2>
+								<p>Ben was assured that Alli was the girl for him when he was able to convince her that getting a dog, "wouldn't be that bad." Wall-E enters the picture.</p>
+							</div>
+					</li>
+					<li>
+							<div class="cbp_tmicon3 img4"> </div>
+							<div class="cbp_tmlabel cbp_tmlabel1 wow fadeInRight" data-wow-delay="0.3s">
+								<h2>January 2013</h2>
+								<p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean.</p>
+							</div>
+					</li>
+					<li>
+							<div class="cbp_tmicon4 img5"> </div>
+					</li>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="clearfix"> </div>
+				</div>
+				<!---//End-about-time-line---->
+			<!---- about ---->
+		</div>
+		    <!---- /timeline ---->
+			<!---- wedding party ---->
+			<div id="party" class="team-members">
+					<div class="wrap"> 
+						<div class="tm-head">
+							<h3>Our Wedding Party</h3>
+							<p>Just a gal and a bunch of dudes.</p>
+						</div>
+						<div class="tm-head-grids">
+							<div class="tm-head-grid wow fadeInLeft" data-wow-delay="0.3s">
+								<img src="images/wp-lauren.jpg" alt="Lauren">
+								<h4>Lauren Murray</h4>
+							</div>
+							<div class="tm-head-grid wow fadeInUp" data-wow-delay="0.3s">
+								<img src="images/wp-jake.jpg" alt="Jake">
+								<h4>Jake Trebach</h4>
+							</div>
+							<div class="tm-head-grid wow fadeInRight" data-wow-delay="0.3s">
+								<img src="images/wp-willie.jpg" alt="Willie">
+								<h4>Will Trebach</h4>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+						<div class="tm-head-grids">
+							<div class="tm-head-grid wow fadeInLeft" data-wow-delay="0.3s">
+								<img src="images/wp-ryan.jpg" alt="Ryan">
+								<h4>Ryan Herrington</h4>
+							</div>
+							<div class="tm-head-grid wow fadeInUp" data-wow-delay="0.3s">
+								<img src="images/wp-evan.jpg" alt="Evan">
+								<h4>Evan Herrington</h4>
+							</div>
+							<div class="tm-head-grid wow fadeInRight" data-wow-delay="0.3s">
+								<img src="images/wp-owen.jpg" alt="Owen">
+								<h4>Owen Herrington</h4>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+						<div class="tm-head-grids">
+							<div class="tm-head-grid wow fadeInLeft" data-wow-delay="0.3s">
+								<img src="images/wp-dan.jpg" alt="Daniel">
+								<h4>Daniel Herrington</h4>
+							</div>
+							<div class="tm-head-grid wow fadeInUp" data-wow-delay="0.3s">
+								<img src="images/wp-will.jpg" alt="Will">
+								<h4>Will Herrington</h4>
+							</div>
+							<div class="tm-head-grid wow fadeInRight" data-wow-delay="0.3s">
+								<img src="images/wp-walle.jpg" alt="Wall-E">
+								<h4>Wall-E</h4>
+								<h5>Just kidding - he isn't even invited</h5>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+						<!-- <p class="team-info">Proin iaculis purus consequat sem cure  digni ssim donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt proin iaculis.</p> -->
+					</div>
+				</div>
+			<!---- wedding party --->
+			<!---- registries ---->
+			<div id="registries" class="services">
+				<div class="container">
+					<div class="service-head text-center">
+						<h2>Registries</h2>
+						<span> </span>
+					</div>
+					<div class="services-grids text-center">
+						<div class="col-md-4">
+							<div class="service-grid wow bounceIn" data-wow-delay="0.3s">
+								<span class="fa fa-home fa-4x"> </span>
+								<h3><a href="#">Crate &amp; Barrel</a></h3>
+								<p></p>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="service-grid wow bounceIn" data-wow-delay="0.3s">
+								<span class="fa fa-gift fa-4x"> </span>
+								<h3><a href="#">Zola</a></h3>
+								<p></p>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="service-grid wow bounceIn" data-wow-delay="0.3s">
+								<span class="fa fa-cutlery fa-4x"> </span>
+								<h3><a href="#">Macy's</a></h3>
+								<p></p>
+							</div>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+				</div>
+			</div>
+			<!---- registries ---->
+			<!---- contact ---->
+			<div id="contact" class="contact">
+				<div class="container">
+				<div class="contact-grids">
+					<div class="col-md-12">
+						<div class="contact-left wow fadeInRight" data-wow-delay="0.3s">
+							<h3>Contact Us</h3>
+							<label>If you have any questions or concerns, please don't hesitate to reach out!</label>
+							<div class="contact-left-grids">
+								<div class="col-md-6">
+									<div class="contact-left-grid">
+									    <h4 style="color:white;">Ben</h4>
+										<p><span class="fa fa-mobile fa-3x"> </span>(202) 486-5581</p>
+										<br>
+										<p><span class="fa fa-envelope fa-2x"> </span><a href="mailto:ben.trebach@gmail.com">ben.trebach@gmail.com</a></p>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="contact-right-grid">
+									    <h4 style="color:white;">Alli</h4>
+										<p><span class="fa fa-mobile fa-3x"> </span>(732) 606-6344</p>
+										<br>
+										<p><span class="fa fa-envelope fa-2x"> </span><a href="mailto:amherrington1025@gmail.com">amherrington1025@gmail.com</a></p>
+									</div>
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+						</div>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<!--- footer ---->
+				<div class="copy-right text-center">
+					<p>Developed by <a href="http://btrebach.com/">the groom.</a></p>
+					<script type="text/javascript">
+									$(document).ready(function() {
+										
+										$().UItoTop({ easingType: 'easeOutQuart' });
+										
+									});
+								</script>
+									<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+				</div>
+				<!--- /footer ---->
+			</div>
+			</div>
+			<!---- contact ---->
+		</div>
+	</body>
+</html>
+
