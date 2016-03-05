@@ -25,6 +25,8 @@ body a{
 .bg{
 	background:url(../images/BeachEngagement.JPG) no-repeat 0px 0px;
 	background-size:cover;
+    width: 100%;
+    height: auto;
 }
 .header{
 }
@@ -60,7 +62,7 @@ body a{
 }
 .top-nav ul li.active a,
 .top-nav ul li a:hover{
-	color:#EE2F1B;
+	color:#28C1FB;
 }
 .logo a{
 	display:block;
@@ -208,6 +210,7 @@ nav a#pull {
 /*---- services ----*/
 .services{
 	padding:3em 0;
+    min-height: 100vh;
 }
 .service-head h2{
 	font-weight:900;
@@ -258,6 +261,7 @@ nav a#pull {
 /*---- Other Expertise ----*/
 .expertise{
 	background: white;
+    min-height: 100vh;
 }
 .expertice-right-grid{
 	margin: 0;
@@ -456,6 +460,8 @@ a.leran-more:hover{
 /*----start-about----*/
 .about{
 	padding:3em 0;
+    background: white;
+    min-height: 100vh;
 }
 .about-head{
 	text-align: center;
@@ -598,6 +604,7 @@ a.leran-more:hover{
 .team-members{
 	padding: 3em 0 4em 0;
 	background: #F9F9F9;
+    min-height: 100vh;
 }
 .tm-head{
 	text-align:center;
@@ -832,7 +839,7 @@ a.leran-more:hover{
 	-ms-transition:0.5s all;
 }
 .contact-right input[type="submit"]:hover{
-	background:#EE2F1B;
+	background:#28C1FB;
 }
 /*---- copy-right -----*/
 .copy-right p{
@@ -1403,6 +1410,7 @@ a.leran-more:hover{
 
 .portfolio {
     background-color: #F7F7F7;
+    min-height: 100vh;
 }
 
 .tm-head-grid-half {
@@ -1410,4 +1418,10 @@ a.leran-more:hover{
 	text-align: center;
 	float: left;
 	margin-right: 4.5%;
+}
+
+
+
+.expertise-subhead {
+    margin-top: 20px;
 }

@@ -28,6 +28,29 @@ Author URL: http://btrebach.com
 				});
 			});
 		</script>
+		<style>
+            .scrolloff {
+                pointer-events: none;
+            }
+        </style>
+        <script>
+            $(document).ready(function () {
+                $('#map').addClass('scrolloff');                // set the mouse events to none when doc is ready
+
+                $('#overlay').on("mouseup",function(){          // lock it when mouse up
+                    $('#map').addClass('scrolloff'); 
+                    //somehow the mouseup event doesn't get call...
+                });
+                $('#overlay').on("mousedown",function(){        // when mouse down, set the mouse events free
+                    $('#map').removeClass('scrolloff');
+                });
+                $("#map").mouseleave(function () {              // becuase the mouse up doesn't work... 
+                    $('#map').addClass('scrolloff');            // set the pointer events to none when mouse leaves the map area
+                                                                // or you can do it on some other event
+                });
+
+            });
+        </script>
 		<link href="css/style.css" rel='stylesheet' type='text/css' />
    		 <!-- Custom Theme files -->
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -111,7 +134,8 @@ Author URL: http://btrebach.com
 								</div>
 								<div class="e-left-inner-grid-right">
 									<h4>Ceremony</h4>
-									<p>Our ceremony will be held at Beaton's Boatyard which can be found at: 72 Beaton Rd. Brick, NJ 08723</p>
+									<p>TBD - we're working on it!</p>
+									<!-- <p>Our ceremony will be held at Beaton's Boatyard which can be found at: 72 Beaton Rd. Brick, NJ 08723</p> -->
 								</div>
 								<div class="clearfix"> </div>
 							</div>
@@ -121,7 +145,7 @@ Author URL: http://btrebach.com
 								</div>
 								<div class="e-left-inner-grid-right">
 									<h4>Reception</h4>
-									<p>Our reception will be held at the Sunset Ballroom located in Jack Baker's Lobster Shanty: 83 Channel Dr. Point Pleasant Beach, NJ 08742</p>
+									<p>Our reception will be held at the Sunset Ballroom located in Jack Baker's Lobster Shanty:<br>83 Channel Dr. Point Pleasant Beach, NJ 08742</p>
 								</div>
 								<div class="clearfix"> </div>
 							</div>
@@ -170,9 +194,9 @@ Author URL: http://btrebach.com
 									</div>
 									<div class="portfolio-top-left-grid-right">
 										<h5>Point Pleasant, NJ</h5>
-										<p><a href="http://www.surfside-motel.com/">Surfside Motel</a> - (732) 899-1109</p>
-										<p><a href="http://www.windsweptmotel.net/">Windswept Motel</a> - (732) 899-1282</p>
-										<p><a href="http://www.thewhitesands.com/">The White Sands</a> - (732) 899-3370</p>
+										<p><a style="color:#28C1FB" href="http://www.surfside-motel.com/" target="_blank">Surfside Motel</a> - (732) 899-1109</p>
+										<p><a style="color:#28C1FB" href="http://www.windsweptmotel.net/" target="_blank">Windswept Motel</a> - (732) 899-1282</p>
+										<p><a style="color:#28C1FB" href="http://www.thewhitesands.com/" target="_blank">The White Sands</a> - (732) 899-3370</p>
 									</div>
 									<div class="clearfix"> </div>
 								</div>
@@ -182,8 +206,8 @@ Author URL: http://btrebach.com
 									</div>
 									<div class="portfolio-top-left-grid-right">
 										<h5>Bay Head, NJ</h5>
-										<p><a href="http://www.bentleyinn.com/">The Bentley Inn</a> - (732) 892-9589</p>
-										<p><a href="http://www.thegrenville.com/">The Grenville</a> - (732) 892-3100</p>
+										<p><a style="color:#28C1FB" href="http://www.bentleyinn.com/" target="_blank">The Bentley Inn</a> - (732) 892-9589</p>
+										<p><a style="color:#28C1FB" href="http://www.thegrenville.com/" target="_blank">The Grenville</a> - (732) 892-3100</p>
 									</div>
 									<div class="clearfix"> </div>
 								</div>
@@ -193,9 +217,9 @@ Author URL: http://btrebach.com
 									</div>
 									<div class="portfolio-top-left-grid-right">
 										<h5>Spring Lake, NJ</h5>
-										<p><a href="http://www.thehewittwellington.com/">Hewitt Wellington</a> - (732) 974-1212</p>
-										<p><a href="http://www.chateauinn/">Chateau Inn &amp; Suites</a> - (732) 974-2000</p>
-										<p><a href="http://www.breakershotel.com/">The Breakers on the Ocean</a> - (732) 449-7700</p>
+										<p><a style="color:#28C1FB" href="http://www.thehewittwellington.com/" target="_blank">Hewitt Wellington</a> - (732) 974-1212</p>
+										<p><a style="color:#28C1FB" href="http://www.chateauinn/" target="_blank">Chateau Inn &amp; Suites</a> - (732) 974-2000</p>
+										<p><a style="color:#28C1FB" href="http://www.breakershotel.com/" target="_blank">The Breakers on the Ocean</a> - (732) 449-7700</p>
 									</div>
 									<div class="clearfix"> </div>
 								</div>
@@ -205,7 +229,7 @@ Author URL: http://btrebach.com
 									</div>
 									<div class="portfolio-top-left-grid-right">
 										<h5>Sea Girt, NJ</h5>
-										<p><a href="http://www.seagirtlodge.com/">Sea Girt Lodge</a> - (732) 974-2323</p>
+										<p><a style="color:#28C1FB" href="http://www.seagirtlodge.com/" target="_blank">Sea Girt Lodge</a> - (732) 974-2323</p>
 									</div>
 									<div class="clearfix"> </div>
 								</div>
@@ -213,8 +237,8 @@ Author URL: http://btrebach.com
 						</div>
 					</div>
 					<div class="col-md-4 portfolio-top-right-inner wow fadeInRight" data-wow-delay="0.3s">
-						<div class="" style="margin-top:50px; padding-right:50px;">
-							<iframe src="https://www.google.com/maps/d/embed?mid=z5atqarCKRq4.k4bgq4S2NnoQ" width="360" height="750"></iframe>
+						<div id="overlay" class="map" style="margin-top:50px; padding-right:50px;">
+							<iframe id="map" src="https://www.google.com/maps/d/embed?mid=z5atqarCKRq4.k4bgq4S2NnoQ" width="360" height="750"></iframe>
 						</div>
 					</div>
 					<div class="clearfix"> </div>
@@ -234,13 +258,13 @@ Author URL: http://btrebach.com
 							<div class="cbp_tmicon img1"> </div>
 							<div class="cbp_tmlabel wow fadeInLeft" data-wow-delay="0.3s">
 								<h2>August 2010 <br> Our Humble Beginnings</h2>
-								<p>Both Alli and Ben began their undergraduate education at St. Mary's College of Maryland. Living in the school's oldest and most likely to be haunted dorm building.</p>
+								<p>Both Alli and Ben began their undergraduate education at St. Mary's College of Maryland. Living in the school's oldest and most likely to be haunted residence building.</p>
 							</div>
 					</li>
 					<li>
 							<div class="cbp_tmicon1 img2"> </div>
 							<div class="cbp_tmlabel cbp_tmlabel1 wow fadeInRight" data-wow-delay="0.3s">
-								<h2>November 2012</h2>
+								<h2>November 2012 <br> Let's Go Sailing</h2>
 								<p>Ben joined the Offshore Sailing Team and began to learn how to sail under Alli's tutelage. Alli can confirm he had ZERO idea what he was doing.</p>
 							</div>
 					</li><br />
@@ -255,7 +279,7 @@ Author URL: http://btrebach.com
 							<div class="cbp_tmicon3 img4"> </div>
 							<div class="cbp_tmlabel cbp_tmlabel1 wow fadeInRight" data-wow-delay="0.3s">
 								<h2>November 2015 <br> The Big Question</h2>
-								<p>With a little help from Wall-E, Ben built up the courage to ask Alli to spend the rest of her life with him. After a little convincing, she even said yes!</p>
+								<p>With a little help from Wall-E, Ben built up the courage to ask Alli to spend the rest of her life with him. To Ben's surprise, she even said yes!</p>
 							</div>
 					</li>
 					<li>
@@ -331,12 +355,12 @@ Author URL: http://btrebach.com
 				<div class="container">
 					<div class="service-head text-center">
 						<h2>Registries</h2>
-						<span> </span>
+						<span></span>
 					</div>
 					<div class="services-grids text-center">
 						<div class="col-md-4">
 							<div class="service-grid wow bounceIn" data-wow-delay="0.3s">
-								<a href="http://www.crateandbarrel.com" target="_blank">
+								<a href="http://www.crateandbarrel.com/gift-registry/allison-herrington-and-ben-trebach/r5478535" target="_blank">
 								    <span class="fa fa-home fa-4x"> </span>
 								    <h3>Crate &amp; Barrel</h3>
                                     <p></p>
@@ -345,7 +369,7 @@ Author URL: http://btrebach.com
 						</div>
 						<div class="col-md-4">
 							<div class="service-grid wow bounceIn" data-wow-delay="0.3s">
-								<a href="http://www.zola.com" target="_blank">
+								<a href="https://www.zola.com/registry/herringtontrebach" target="_blank">
 								    <span class="fa fa-gift fa-4x"> </span>
 								    <h3>Zola</h3>
 								    <p></p>
@@ -354,7 +378,7 @@ Author URL: http://btrebach.com
 						</div>
 						<div class="col-md-4">
 							<div class="service-grid wow bounceIn" data-wow-delay="0.3s">
-								<a href="http://www.macys.com" target="_blank">
+								<a href="http://www1.macys.com/registry/wedding/guest/?registryId=6555127" target="_blank">
 								    <span class="fa fa-cutlery fa-4x"> </span>
 								    <h3>Macy's</h3>
 								    <p></p>
