@@ -82,7 +82,7 @@ nav {
 }
 nav ul {
 	padding: 0;
-	float: right;
+/*	float: right;*/
 	margin: 0.9em 0;
 }
 nav li {
@@ -428,7 +428,7 @@ a.leran-more:hover{
 	position:relative;
 }
 .portfolio-work-grid-pic img{
-	width:100%;
+	width:450px;
 }
 .portfolio-work-grid-pic{
 	position:relative;
